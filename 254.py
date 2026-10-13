@@ -1,11 +1,10 @@
-d, t = map(float, input().split())
 
-total = d
+d = int(input("Enter value for d: "))
+t = int(input("Enter value for t: "))
+
 days = 1
-
-while total <= t:
-    d *= 1.1
-    total += d
+while d <= t:
+    d += d * 0.1
     days += 1
 
-print(f"{total:.2f} km, {days} days")
+print(f"{d:.2f} km, {days} days")
